@@ -1,4 +1,4 @@
-# Muller_sitzplatz
+# Sitzplatz A350-900
 
 1518332
 3984253
@@ -6,10 +6,11 @@
 ## Process
 1. We wrote the Promt by hand
 2. Translated the Prompt via DeepL in the Schwarz Digits/ Lidl translator
-3. We pasted the Promt up until the functionality into DeepSeek's V3 and R1 Model with Reasoning turned on and copied 
+3. We pasted the Promt into DeepSeek's V3 and R1 Model with Reasoning turned on. The functions were given bit by bit which lead to 11 different versions
+4. We send the code to ChatGPT o4 mini to function as a reviewer
 
 
-## Promt
+## Original Promt
 
 ### German
 Ich möchte, dass du mir ein Programm in Java schreibst.
@@ -72,6 +73,23 @@ The following functions should be built in:
 - F11: Export occupancy data - Occupancy plans and passenger lists can be exported as a text file for printing or forwarding.
 
 
+## Oringinal Code
+DeepSeek's code worked.
+In some cases it took a while until it was able to generate it (269 Seconds of thinking for F08). It also had a few hickups with server overload where it would take a few minutes between attempts until it would respond.
+However it worked.
 
+> Also see response.md for DeepSeek's thought process
+
+
+## Review
+We tried both ChatGPT and Gemini 2.0. The latter only praised the code and didn't give any insight on improvements.
+
+https://chatgpt.com/share/681b858e-d090-8011-90a5-ef8a1ea825a7
+
+ChatGPT made a couple of errors in it's response. Most annoyingly it called methodes which it believed to exist or that had a slightly different wording. Even after mentioning that no such methode exists or that they are declared differently, it still insisted on using them.
+
+
+## Tests
+As kind of a third validation we gave DeepSeek the reviewed code and told it to write some tests for it. Roughly two thirds of them functioned without any problems. The other third tried calling none existing methodes or failed due to logical problems.
 
 
