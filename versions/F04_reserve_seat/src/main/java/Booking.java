@@ -1,0 +1,1 @@
+public record Booking(String passengerName, String bookingNumber, String specialRequests) {}

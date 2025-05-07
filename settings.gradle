@@ -1,1 +1,3 @@
 rootProject.name = 'Muller_sitzplatz'
+
+include 'versions:F01_initialize_seating_plan'
