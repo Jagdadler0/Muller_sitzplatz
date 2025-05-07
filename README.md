@@ -1,9 +1,12 @@
 # Muller_sitzplatz
 
+1518332
+3984253
+
 ## Process
 1. We wrote the Promt by hand
 2. Translated the Prompt via DeepL in the Schwarz Digits/ Lidl translator
-3. We pasted the Promt up until the functionality into DeepSeek's V3 and R1 Model with Reasoning turned on 
+3. We pasted the Promt up until the functionality into DeepSeek's V3 and R1 Model with Reasoning turned on and copied 
 
 
 ## Promt
