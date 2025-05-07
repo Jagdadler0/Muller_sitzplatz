@@ -1,31 +1,21 @@
 plugins {
-    id("java")
+    id 'java'
 }
 
 group = "dhbw"
 version = ""
 
-repositories {
-    mavenCentral()
+allprojects {
+    repositories {
+        mavenCentral()
+    }
 }
 
-sourceSets {
-    f01 {java {srcDirs = ['src/main/F01_initialize_seating_plan']}}
-    f02 {java {srcDirs = ['src/main/F02_display_seat']}}
-    f03 {java {srcDirs = ['src/main/F03_book_seat']}}
-    f04 {java {srcDirs = ['src/main/F04_reserve_seat']}}
-    f05 {java {srcDirs = ['src/main/F05_cancel_seat']}}
-    f06 {java {srcDirs = ['src/main/F06_swap_seat']}}
-    f07 {java {srcDirs = ['src/main/F07_block_release_seat']}}
-    f08 {java {srcDirs = ['src/main/F08_search_for_available_seats']}}
-    f09 {java {srcDirs = ['src/main/F09_manage_passenger_list']}}
-    f10 {java {srcDirs = ['src/main/F10_create_occupancy_statistics']}}
-    f11 {java {srcDirs = ['src/main/F11_export_occupancy_data']}}
-}
-
-dependencies {
-    compileOnly("org.projectlombok:lombok:1.18.38")
-    annotationProcessor("org.projectlombok:lombok:1.18.38")
-    implementation("org.slf4j:slf4j-api:2.0.17")
-    implementation("org.slf4j:slf4j-simple:2.0.17")
+subprojects {
+    dependencies {
+        implementation 'org.projectlombok:lombok:1.18.38'
+        annotationProcessor 'org.projectlombok:lombok:1.18.38'
+        implementation 'org.slf4j:slf4j-api:2.0.17'
+        implementation 'org.slf4j:slf4j-simple:2.0.17'
+    }
 }
