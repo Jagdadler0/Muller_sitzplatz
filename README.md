@@ -1,8 +1,12 @@
 # Muller_sitzplatz
 
-## Promt
-Translated via DeepL in the Schwarz Digits/ Lidl translator
+## Process
+1. We wrote the Promt by hand
+2. Translated the Prompt via DeepL in the Schwarz Digits/ Lidl translator
+3. We pasted the Promt up until the functionality into DeepSeek's V3 and R1 Model with Reasoning turned on 
 
+
+## Promt
 
 ### German
 Ich möchte, dass du mir ein Programm in Java schreibst.
@@ -63,5 +67,8 @@ The following functions should be built in:
 - F09: Manage passenger list - For each occupied seat, the corresponding passenger is displayed with name, ticket number and any special requests.
 - F10: Create occupancy statistics - The system creates an overview of seat occupancy per class, number of free and occupied seats and percentage occupancy.
 - F11: Export occupancy data - Occupancy plans and passenger lists can be exported as a text file for printing or forwarding.
+
+
+
 
 
